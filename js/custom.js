@@ -50,7 +50,22 @@ ibg();
 // Конец - "Адаптив изображений"
 // =================================================================
 
+let PaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+document.body.style.paddingRight = PaddingValue;
+document.querySelector('.loading-screen').style.paddingRight = PaddingValue;
+let Body = document.body;
+Body.classList.add('_Noloaded');
 
+
+window.onload = function() { // можно также использовать window.addEventListener('load', (event) => {
+	//document.querySelector('#DefaultStyle').removeAttribute('disabled');
+	let timerinAniItemWrapper = setTimeout(function tick() {
+		Body.classList.remove('_Noloaded');
+		document.body.style.paddingRight = 0;
+		document.querySelector('.loading-screen').style.paddingRight = 0;
+		Body.classList.add('_loaded');
+	}, 100);
+};
 
 
 
