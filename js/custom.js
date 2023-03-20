@@ -594,7 +594,6 @@ if (lazyImages.length > 0) {
 	lazyImages.forEach(img => {
 		if (img.dataset.src || img.dataset.srcset) {
 			lazyImagesPositions.push(img.getBoundingClientRect().top + pageYOffset);
-			console.log(lazyImagesPositions);
 			lazyScrollCheck();
 			ibg();
 		}
@@ -603,7 +602,6 @@ if (lazyImages.length > 0) {
 
 window.addEventListener("scroll", lazuScroll);
 function lazuScroll() {
-	console.log(pageYOffset);
 	if (document.querySelectorAll('img[data-src], source[data-srcset]').length > 0) {
 		lazyScrollCheck();
 		ibg();
