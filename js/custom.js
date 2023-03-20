@@ -362,6 +362,7 @@ if (blokTabs) {
 	);
 
 	document.querySelector('.Tabe-link').click();
+	blokTabs.classList.add('_active');
 }
 
 
