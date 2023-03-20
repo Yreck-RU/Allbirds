@@ -50,7 +50,7 @@ ibg();
 // Конец - "Адаптив изображений"
 // =================================================================
 
-let PaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+/*let PaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 document.body.style.paddingRight = PaddingValue;
 document.querySelector('.loading-screen').style.paddingRight = PaddingValue;
 let Body = document.body;
@@ -65,7 +65,7 @@ window.onload = function() { // можно также использовать w
 		document.querySelector('.loading-screen').style.paddingRight = 0;
 		Body.classList.add('_loaded');
 	}, 100);
-};
+};*/
 
 
 
